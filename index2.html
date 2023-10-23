@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+
+    <div>
+        <h1>integer</h1>
+        <p id="length"></p>
+    </div>
+
+    <div>
+        <h1>String</h1>
+        <p id="String1"></p>   
+        <p id="String2"></p>    
+    </div>
+
+    <div>
+        <h1>booleans</h1>
+        <p id="booleans"></p>   
+    </div>
+    <div>
+        <h1>object</h1>
+        <p id="object"></p>
+        <p id="firstName"></p>
+        <p id="lastName"></p>
+    </div>
+    <div>
+        <h1>Array</h1>
+        <p id="arraylength"></p>
+        <p id="car1"></p>
+       
+    </div>
+    <script>
+        let length = 16;
+        let weight = 7.5;
+        document.getElementById("length").innerHTML = length + weight;
+
+        // Strings:
+        let color = "Yellow";
+        let lastName = "Johnson";
+        document.getElementById("String1").innerHTML = color.length;
+        document.getElementById("String2").innerHTML = lastName;
+
+
+        // Booleans
+        let x = true;
+        let y = false;
+        document.getElementById("booleans").innerHTML = x;
+
+
+        // Object:
+        const person = { firstName: "John", lastName: "Doe" };
+
+        document.getElementById("firstName").innerHTML = person.firstName;
+        document.getElementById("lastName").innerHTML = person.lastName;
+
+
+        // Array object:
+        const cars = ["Saab", "Volvo", "BMW"];
+        document.getElementById("arraylength").innerHTML = cars.length;
+        document.getElementById("car1").innerHTML = cars[0];
+        // Date object:
+        const date = new Date("2022-03-25");
+    </script>
+</body>
+
+</html>
